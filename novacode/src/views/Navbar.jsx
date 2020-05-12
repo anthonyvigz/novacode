@@ -4,7 +4,9 @@ import "../styles/navbar.scss";
 export default function NavBar() {
   return (
     <nav>
-      <h1>novacode</h1>
+      <h1>
+        <span>nova</span>code
+      </h1>
       <div className="links">
         <a href="#home">HOME</a>
         <a href="#services">SERVICES</a>
