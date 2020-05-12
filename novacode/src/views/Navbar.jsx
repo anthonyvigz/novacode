@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function NavBar() {
   return (
     <nav>
-      <img className="showLogo" src={top ? logowhite : logo} alt="navLogo" />
       <div className="links">
         <a href="#home">HOME</a>
         <a href="#services">SERVICES</a>
