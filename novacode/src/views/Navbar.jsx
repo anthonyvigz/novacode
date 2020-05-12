@@ -8,11 +8,15 @@ export default function NavBar() {
         <span>nova</span>code
       </h1>
       <div className="links">
-        <a href="#home">HOME</a>
-        <a href="#services">SERVICES</a>
-        <a href="#gallery">GALLERY</a>
-        <a href="#reviews-">REVIEWS</a>
-        <a href="#quote">QUOTE</a>
+        <a href="#">Products</a>
+        <a href="#">Solutions</a>
+        <a href="#">Pricing</a>
+        <a href="#">Blog</a>
+        <a href="#">Company</a>
+      </div>
+      <div className="navButtons">
+        <button className="loginButton">Log In</button>
+        <button className="quoteButton">Get a Quote</button>
       </div>
     </nav>
   );
