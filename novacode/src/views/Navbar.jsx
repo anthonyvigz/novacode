@@ -11,7 +11,6 @@ export default function NavBar() {
         <a href="#">Products</a>
         <a href="#">Solutions</a>
         <a href="#">Pricing</a>
-        <a href="#">Blog</a>
       </div>
       <div className="navButtons">
         <button className="loginButton">Log In</button>
