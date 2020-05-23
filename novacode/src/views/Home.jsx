@@ -6,7 +6,11 @@ import TypistLoop from "react-typist-loop";
 export default function Home() {
   return (
     <div className="header">
-      <h1>Welcome to NovaCode</h1>
+      <h1>
+        We write code that
+        <br />
+        works for your business.
+      </h1>
     </div>
   );
 }
