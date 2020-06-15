@@ -1,4 +1,62 @@
-h1 {
-  font-family: "Raleway", sans-serif;
-  color: #333;
+.header {
+  background-color: #5e63e4;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+
+  .elementor-shape {
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    fill: white;
+    transform: scale(-1, 1);
+
+    svg {
+      display: block;
+      width: calc(100% + 1.3px);
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+  .homeBanner {
+    display: flex;
+
+    h1 {
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      z-index: 5;
+      margin-left: 50px;
+      font-size: 3em;
+    }
+
+    // this is the solutions box on the homepage
+    .whatWeDo {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+
+      .wwdHeader {
+        display: flex;
+      }
+
+      .solutionsBlock {
+        display: flex;
+
+        .listedSolutions {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .additionalSolutions {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
 }
