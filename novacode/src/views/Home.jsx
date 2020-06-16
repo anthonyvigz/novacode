@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/home.scss";
+import TextLoop from "react-text-loop";
 
 export default function Home() {
   return (
@@ -14,11 +15,24 @@ export default function Home() {
         </svg>{" "}
       </div>
       <div className="homeBanner">
-        <h1>
-          We write code that
-          <br />
-          works for your business.
-        </h1>
+        <div className="leftBanner">
+          <h1>
+            We write code that
+            <br />
+            works for your
+            <br />
+            <TextLoop springConfig={{ stiffness: 180, damping: 15 }}>
+              <h3>business.</h3>
+              <h3>website.</h3>
+              <h3>application.</h3>
+              <h3>users.</h3>
+              <h3>database.</h3>
+            </TextLoop>
+          </h1>
+          <button className="workButton">
+            Our Work <i className="fa fa-arrow-right"></i>
+          </button>
+        </div>
         <div className="whatWeDo">
           <div className="wwdHeader">
             <h2>Solutions</h2>
