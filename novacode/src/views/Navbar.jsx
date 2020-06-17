@@ -25,11 +25,11 @@ export default function NavBar() {
           <a href="#">Contact</a>
           <a href="#">About Us</a>
         </nav>
-        <i onClick={showNav} className="fas fa-bars"></i>
+        <a className="rightNavButton" href="#">
+          Blog
+          <i class="fa fa-rss" aria-hidden="true"></i>
+        </a>
       </nav>
-      <div className="sideNav" style={!sideNav ? { right: "-200px" } : null}>
-        <button onClick={showNav}>X</button>
-      </div>
     </>
   );
 }

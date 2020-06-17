@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/home.scss";
 import TextLoop from "react-text-loop";
+import logo from "../img/NOVACODELOGO.png";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </div>
       <div className="homeBanner">
         <div className="leftBanner">
+          <img src={logo} width="250" alt="homelogo" />
           <h1>
             We write code that
             <br />
@@ -27,6 +29,7 @@ export default function Home() {
               <h3>application.</h3>
               <h3>users.</h3>
               <h3>database.</h3>
+              <h3>online store.</h3>
             </TextLoop>
           </h1>
           <button className="workButton">
