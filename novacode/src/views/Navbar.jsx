@@ -1,16 +1,10 @@
 import React, { useState } from "react";
 import "../styles/navbar.scss";
+import { NavLink, useLocation } from "react-router-dom";
 
 export default function NavBar() {
-  // this sets the side navbar
-  const [sideNav, setNav] = useState(false);
-
-  // function for navbar
-  const showNav = (event) => {
-    event.preventDefault();
-
-    setNav(!sideNav);
-  };
+  // location
+  const location = useLocation();
 
   return (
     <>
@@ -19,9 +13,13 @@ export default function NavBar() {
           <span>nova</span>code
         </h1>
         <nav className="links">
-          <a href="#">Pricing</a>
-          <a href="#">Services</a>
-          <a href="#">Work</a>
+          <NavLink exact activeClassName="clickedDash" to="/work">
+            Work
+          </NavLink>
+          <NavLink exact activeClassName="clickedDash" to="/">
+            Tutoring
+          </NavLink>
+          <a href="#">Videos</a>
           <a href="#">Contact</a>
           <a href="#">About Us</a>
         </nav>
