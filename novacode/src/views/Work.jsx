@@ -6,16 +6,9 @@ export default function Work() {
   const parentList = {
     visible: {
       opacity: 1,
-      transition: {
-        when: "beforeChildren",
-        staggerChildren: 0.2,
-      },
     },
     hidden: {
       opacity: 0,
-      transition: {
-        when: "afterChildren",
-      },
     },
   };
 
@@ -35,7 +28,6 @@ export default function Work() {
         variants={item}
         transition={{
           ease: "easeIn",
-          duration: 2,
           type: "spring",
           stiffness: 100,
         }}

@@ -22,22 +22,10 @@ function App() {
             <path class="elementor-shape-fill" d="M0,6V0h1000v100L0,6z"></path>
           </svg>{" "}
         </div>
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence>
           <Switch location={location} key={location.pathname}>
-            <Route
-              exact
-              path="/"
-              render={(props) => (
-                <Home key={props.match.params.pageid} {...props} />
-              )}
-            />
-            <Route
-              exact
-              path="/work"
-              render={(props) => (
-                <Work key={props.match.params.pageid} {...props} />
-              )}
-            />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/work" component={Work} />
           </Switch>
         </AnimatePresence>
       </div>

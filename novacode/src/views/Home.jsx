@@ -9,16 +9,9 @@ export default function Home() {
   const parentList = {
     visible: {
       opacity: 1,
-      transition: {
-        when: "beforeChildren",
-        staggerChildren: 0.2,
-      },
     },
     hidden: {
       opacity: 0,
-      transition: {
-        when: "afterChildren",
-      },
     },
   };
 
@@ -39,7 +32,6 @@ export default function Home() {
         variants={item}
         transition={{
           ease: "easeIn",
-          duration: 2,
           type: "spring",
           stiffness: 100,
         }}
@@ -65,7 +57,16 @@ export default function Home() {
           Our Work <i className="fa fa-arrow-right"></i>
         </button>
       </motion.div>
-      <div className="whatWeDo">
+      <motion.div
+        variants={item}
+        transition={{
+          ease: "easeIn",
+          type: "spring",
+          stiffness: 100,
+        }}
+        exit="hidden"
+        className="whatWeDo"
+      >
         <div className="wwdHeader">
           <h2>Solutions</h2>
           <h3>Customize Your Package</h3>
@@ -131,7 +132,7 @@ export default function Home() {
           </div>
         </div>
         <button>Learn More</button>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }
