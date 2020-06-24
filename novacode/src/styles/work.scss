@@ -1,0 +1,45 @@
+.allWork {
+  display: flex;
+  flex-wrap: wrap;
+
+  .imgBlock {
+    border-radius: 5px;
+    position: relative;
+    img {
+      border-radius: 5px;
+      display: block;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 100%;
+      right: 0;
+      background-color: #008cba;
+      overflow: hidden;
+      width: 0;
+      height: 100%;
+      transition: 0.5s ease;
+    }
+
+    .text {
+      white-space: nowrap;
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+  }
+
+  .imgBlock:hover {
+    .overlay {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
