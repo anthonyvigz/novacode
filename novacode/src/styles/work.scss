@@ -1,10 +1,21 @@
 .allWork {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -125px;
+  justify-content: flex-end;
+  padding-right: 15px;
 
   .imgBlock {
     border-radius: 5px;
     position: relative;
+    margin: 15px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    border: solid rgba(99, 55, 129, 0.37) 3px;
+
     img {
       border-radius: 5px;
       display: block;
@@ -16,11 +27,12 @@
       bottom: 0;
       left: 100%;
       right: 0;
-      background-color: #008cba;
+      background-color: #008bbad3;
       overflow: hidden;
       width: 0;
       height: 100%;
       transition: 0.5s ease;
+      border-radius: 5px;
     }
 
     .text {
