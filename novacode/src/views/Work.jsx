@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import WorkPiece from "./WorkPiece";
 import "../styles/work.scss";
 
 export default function Work() {
+  const [modal, showModal] = useState(false);
+
   // variants for parent animation
   const parentList = {
     visible: {
@@ -112,9 +114,18 @@ export default function Work() {
       animate="visible"
       exit="hidden"
       className="allWork"
+      onMouseEnter={() => {
+        showModal(true);
+      }}
     >
-      {imagelinks.map((link, index) => {
-        return <WorkPiece link={link} key={index} />;
+      <div
+        onClick={() => {
+          showModal(false);
+        }}
+        className={modal ? "modal" : null}
+      ></div>
+      {imagelinks.map((piece, index) => {
+        return <WorkPiece piece={piece} key={index} />;
       })}
     </motion.div>
   );

@@ -15,9 +15,9 @@ export default function WorkPiece(props) {
       exit="hidden"
       className="imgBlock"
     >
-      <img width="300" src={props.link} alt={props.index} />
-      <div className="overlay">
-        <div className="text">HELLO</div>
+      <img width="300" src={props.piece.imagelink} alt={props.index} />
+      <div className="overlay" style={{ backgroundColor: props.piece.color }}>
+        <div className="pieceInfo">HELLO</div>
       </div>
     </motion.div>
   );
